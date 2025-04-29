@@ -1,0 +1,203 @@
+/* Navbar.css */
+
+/* Style général de la barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #FF69B4; /* Rose pour la barre de navigation */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-link {
+  text-decoration: none; /* Enlever la sous-ligne du lien */
+  color: white; /* Texte du logo et du nom en blanc */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-link .logo {
+  width: 40px;  /* Taille de l'image du logo */
+  height: 40px; /* Ajuster la hauteur de l'image pour garder le ratio */
+  margin-right: 10px;
+}
+
+.navbar-logo-link span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Liens de navigation avec cadre rotatif */
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-link-container {
+  position: relative; /* Nécessaire pour la liste déroulante */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white; /* Texte des liens en blanc */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid transparent; /* Bordure initiale transparente */
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.4s ease; /* Transition fluide pour la couleur et la bordure */
+}
+
+.navbar-link:hover {
+  color: #FF69B4; /* Texte en rose lorsqu'on survole */
+  border-color: white; /* Bordure blanche au survol */
+}
+
+/* Style du menu déroulant */
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  width: 220px;
+  display: none;
+  transition: opacity 0.3s ease; /* Transition douce pour l'affichage du menu */
+  z-index: 1000; /* S'assurer que le menu est au-dessus des autres éléments */
+}
+
+.dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+  border-radius: 5px; /* Bordure arrondie pour chaque option */
+  margin-bottom: 8px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1; /* Fond clair au survol */
+}
+
+/* Affichage du menu lorsque le dropdown est ouvert */
+.navbar-link-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* Icônes et boutons de la navbar */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-btn, .theme-toggle-btn, .auth-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn i, .theme-toggle-btn i {
+  font-size: 20px;
+  color: white; /* Icônes en blanc */
+}
+
+.search-btn:hover i, .theme-toggle-btn:hover i {
+  color: #FF69B4; /* Icônes en rose au survol */
+}
+
+.auth-btn {
+  padding: 10px 20px;
+  background-color: #FF69B4; /* Bouton "Connexion / Inscription" en rose */
+  color: white;
+  border-radius: 5px;
+}
+
+.auth-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.auth-btn:hover {
+  background-color: #e4589e; /* Changement de couleur en survol */
+}
+/* Ajouter du style pour la barre de recherche */
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  margin-left: 20px; /* Espacement entre la recherche et les autres icônes */
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn i {
+  font-size: 20px;
+  color: white; /* Icône en blanc */
+}
+
+.search-btn:hover i {
+  color: #FF69B4; /* Icône en rose au survol */
+}
+/* Style pour le bouton de recherche circulaire */
+.search-btn {
+  background-color: #fff; /* Fond blanc */
+  border-radius: 50%; /* Rendre le bouton circulaire */
+  width: 40px; /* Largeur du cercle */
+  height: 40px; /* Hauteur du cercle */
+  display: flex;
+  justify-content: center; /* Centrer l'icône horizontalement */
+  align-items: center; /* Centrer l'icône verticalement */
+  border: 1px solid #ccc; /* Bordure autour du cercle */
+  cursor: pointer;
+}
+
+.search-btn i {
+  font-size: 20px;
+  color: #333; /* Couleur de l'icône */
+}
+
+/* Ajouter un effet au survol */
+.search-btn:hover {
+  background-color: #FF69B4; /* Fond rose au survol */
+  border-color: #FF69B4; /* Bordure rose au survol */
+}
+
+.search-btn:hover i {
+  color: white; /* Changer la couleur de l'icône au survol */
+}
+

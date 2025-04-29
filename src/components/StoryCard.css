@@ -1,0 +1,130 @@
+.story-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .story-header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .story-title {
+    font-size: 1.5rem;
+    color: #4A90E2;
+    opacity: 0;
+    animation: fadeInTitle 1.5s ease forwards;
+  }
+  
+  .stars {
+    font-size: 1.2rem;
+    color: gold;
+    opacity: 0;
+    animation: fadeInStars 2s ease forwards;
+  }
+  
+  .rating-number {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .story-time {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  .audio-btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeInAudioBtn 2.5s ease forwards;
+  }
+  
+  .story-content {
+    padding: 15px;
+  }
+  
+  .story-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .story-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .read-btn, .download-btn {
+    background-color: #F39C12;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-btn:hover, .download-btn:hover {
+    background-color: #E67E22;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInTitle {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInStars {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInAudioBtn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
