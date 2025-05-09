@@ -1,0 +1,38 @@
+/* Styles pour les cartes d'information */
+.info-card {
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .info-card-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .info-card-body h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .info-card-footer {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-card-footer span {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
